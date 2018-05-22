@@ -34,9 +34,13 @@ class TvShow extends React.Component {
   }
 
   renderReview = ()=> {
-    return this.state.review.map (review => {
-      return < Review review={review} />
-    })
+    if (this.state.review.length > 0) {
+      return this.state.review.map (review => {
+        return < Review review={review} />
+      })
+    } else {
+      return <p>There are currently no reviews! Be the first to leave one.</p>
+    }
   }
 
   render() {
