@@ -1,9 +1,7 @@
 import React from 'react';
 
 const ShowDetails = (props) => {
-
-  console.log(props)
-
+  
   const renderEpisodes = props.episodes.map (ep => {
       return <p>Season: {ep.season}, Episode: {ep.number} - {ep.name}</p>
     })

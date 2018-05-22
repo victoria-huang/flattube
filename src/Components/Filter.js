@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class Filter extends Component {
-
   // Returns a list of show types (How can we use this for a filter?)
   listOfShowTypes = () => {
     return this.props.shows.map((s)=> {

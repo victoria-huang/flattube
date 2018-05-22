@@ -24,7 +24,7 @@ class Review extends React.Component {
   render () {
     return (
       <div>
-        <p>{this.state.review}</p>
+        {this.state.review} &nbsp;
         <button onClick={this.handleClick}>Edit</button>
         {this.state.isClicked && <ReviewForm submitReview={this.submitReview} value={this.state.review} />}
       </div>

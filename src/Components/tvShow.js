@@ -48,6 +48,8 @@ class TvShow extends React.Component {
           <button onClick={() => this.clickHandler(this.props.id)}>Details</button>
           {this.state.isClicked && <ShowDetails episodes={this.state.episodes} />}
           < ReviewForm submitReview={this.submitReview} value='' />
+          <hr />
+          <h6><b>All Reviews</b></h6>
           {this.renderReview()}
         </Card>
       </Col>
